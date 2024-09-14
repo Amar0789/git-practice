@@ -1,7 +1,14 @@
 #! /bin/bash
 
-exit
+userid=$(id -u)
 
-sudo su -
+if [ $userid eq 0 ]
+
+then
 
 dnf install mysql -y
+
+else 
+
+exit1
+
