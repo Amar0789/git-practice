@@ -1,5 +1,5 @@
 #!/bin/bash
 
-Fruits = ("Apple" "Banana" "mango")
+Fruits=("Apple" "Banana" "mango")
 
-echo "${Fruits[0]}"
+echo "$Fruits[0]"
