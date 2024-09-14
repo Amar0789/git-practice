@@ -4,7 +4,7 @@ echo "please enter a number "
 
 read num 
 
-if[$num>20]
+if [ $num>20 ]
 then 
 echo "the number you have entered is greater then 20"
 else 
