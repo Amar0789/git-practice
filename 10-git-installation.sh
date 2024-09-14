@@ -6,7 +6,7 @@ if [ $userid -eq 0 ]
 
 then
 
-dnf install mysql -y
+dnf install git -y
 
 else 
 
