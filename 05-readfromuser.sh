@@ -6,7 +6,7 @@ read person1
 
 echo "Please enter name of second friend"
 
-read person2
+read -s person2
 
 echo "This is a conversation between 2 friends $person1 and $person2"
 echo "$person1:: Hi $person1 how are you? "
