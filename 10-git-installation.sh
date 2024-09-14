@@ -2,7 +2,7 @@
 
 userid=$(id -u)
 
-if [ $userid eq 0 ]
+if [ $userid -eq 0 ]
 
 then
 
