@@ -2,4 +2,4 @@
 
 Fruits=("Apple" "Banana" "mango")
 
-echo "${Fruits[1]}"
+echo "${Fruits[@]}"
