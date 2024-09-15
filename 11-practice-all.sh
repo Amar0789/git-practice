@@ -8,7 +8,7 @@ validate ()
 
 {
 
-    if [ $num -ne 5 ]
+    if [ $num -gt 5 ]
 
     then
 
