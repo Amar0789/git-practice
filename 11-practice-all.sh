@@ -1,5 +1,9 @@
 #! /bin/bash
 
-Fruits=("APPLE" "BANANA" "MANGO")
+num1=$1
 
-echo "I like ${Fruits[@]}"
+num2=$2
+
+sum=$num1+$num2
+
+echo "the sum of 2 numbers is $sum"
