@@ -2,4 +2,4 @@
 
 Fruits=("APPLE" "BANANA" "MANGO")
 
-echo "I like ${Fruits[0]}"
+echo "I like ${Fruits[@]}"
