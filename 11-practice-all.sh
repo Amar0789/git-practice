@@ -2,7 +2,7 @@
 
 validate () {
 
-    If [ $1 -gt 5 ]
+    If [ $num -gt 5 ]
 
     then
 
