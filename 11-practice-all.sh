@@ -24,6 +24,6 @@ else
 
     dnf install git -y
 
-    echo -e "Git is \e[31m installed now 0m"
+    echo -e "Git is \e[33m installed now \e[0m"
 
 fi
