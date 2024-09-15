@@ -1,9 +1,17 @@
 #! /bin/bash
 
-num1=$1
+validate () {
 
-num2=$2
+    If ( $1 -gt 5 )
 
-sum=$((num1+num2))
+    echo "The number you have entered is greter than 5"
 
-echo "the sum of 2 numbers is $sum"
+    fi
+}
+
+echo "please enter a number"
+
+read num
+
+validate $num
+
