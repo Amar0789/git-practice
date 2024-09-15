@@ -28,7 +28,7 @@ do
 
     yum install $packagename -y
 
-    echo -e "\e[33m $packagename is installed now \e[0m"
+    echo -e "\e[32m $packagename is installed now \e[0m"
 
  fi
 
