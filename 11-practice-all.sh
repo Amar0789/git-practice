@@ -1,11 +1,5 @@
 #! /bin/bash
 
-echo "Hi user please enter your username"
+Fruits=( "APPLE" "BANANA" "MANGO" )
 
-read username
-
-echo "Please enter your password"
-
-read -s password
-
-echo "Hi $username welcome to your dashboard and your passord is $password"
+echo "I like $Fruits[0]"
