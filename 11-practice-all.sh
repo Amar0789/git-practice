@@ -1,8 +1,10 @@
 #! /bin/bash
 
-validate () {
+validate () 
 
-    If [ $num -gt 5 ]
+{
+
+    If [ $num -eq 5 ]
 
     then
 
