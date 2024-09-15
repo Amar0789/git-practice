@@ -1,6 +1,6 @@
 #! /bin/bash
 
-Echo "Hi user please enter your username"
+echo "Hi user please enter your username"
 
 read username
 
