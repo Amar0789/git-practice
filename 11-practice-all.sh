@@ -4,9 +4,6 @@ echo "please enter a number"
 
 read num
 
-validate $num
-
-
 validate () 
 
 {
@@ -19,6 +16,11 @@ validate ()
 
     fi
 }
+
+validate $num
+
+
+
 
 
 
