@@ -1,4 +1,8 @@
 #! /bin/bash
 
-echo "Hi i am practicing everything from starting"
+person1=Amar
+person2=Akbar
+
+echo "This is juat an echo of $person1 and $person2"
+
 
