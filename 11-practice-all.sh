@@ -1,27 +1,23 @@
 #! /bin/bash
 
-echo "please enter a number"
+userid=$(id -u)
 
-read num
+if [ $userid -ne 0 ] 
 
-validate() 
+ then 
 
-{
+  echo "please proceed with root privileges"
 
-    if [ $num -gt 5 ]
+  exit 
 
-    then
+fi
 
-        echo "The number you have entered is greter than 5"
+dnf list installed git 
 
-    fi
-}
+if [ $? -eq 0 ]
 
-validate $num
+then 
 
+echo "git is already intalled"
 
-
-
-
-
-
+fi
