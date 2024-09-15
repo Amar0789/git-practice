@@ -20,4 +20,10 @@ then
 
 echo "git is already intalled"
 
+else 
+
+    dnf install git -y
+
+    echo "Git is installed now"
+
 fi
