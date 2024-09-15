@@ -18,9 +18,20 @@ validate ()
 }
 
 validate $num
-
-
-
-
+validate $num
+validate $num
+validate $num
+validate $num
+validate $num
+validate $num
+validate $num
+validate $num
+validate $num
+validate $num
+validate $num
+validate $num
+validate $num
+validate $num
+validate $num
 
 
