@@ -2,7 +2,7 @@
 
 validate () {
 
-    If ( $1 -gt 5 )
+    If [ $1 -gt 5 ]
 
     echo "The number you have entered is greter than 5"
 
