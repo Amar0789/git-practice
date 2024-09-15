@@ -4,7 +4,7 @@ echo "please enter a number"
 
 read num
 
-validate () 
+validate() 
 
 {
 
@@ -18,20 +18,10 @@ validate ()
 }
 
 validate $num
-validate $num
-validate $num
-validate $num
-validate $num
-validate $num
-validate $num
-validate $num
-validate $num
-validate $num
-validate $num
-validate $num
-validate $num
-validate $num
-validate $num
-validate $num
+
+
+
+
+
 
 
