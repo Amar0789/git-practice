@@ -26,7 +26,7 @@ do
 
  else 
 
-    dnf $packagename git -y
+    dnf install $packagename -y
 
     echo -e "$packagename is \e[33m installed now \e[0m"
 
