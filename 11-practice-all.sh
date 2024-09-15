@@ -1,5 +1,12 @@
 #! /bin/bash
 
+echo "please enter a number"
+
+read num
+
+validate $num
+
+
 validate () 
 
 {
@@ -13,9 +20,5 @@ validate ()
     fi
 }
 
-echo "please enter a number"
 
-read num
-
-validate $num
 
