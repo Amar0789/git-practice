@@ -7,7 +7,7 @@ read num
 validate $num
 
 
-validate () 
+validate() 
 
 {
 
