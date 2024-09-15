@@ -26,7 +26,7 @@ do
 
  else 
 
-    dnf install $packagename -y
+    yum install $packagename -y
 
     echo -e "$packagename is \e[33m installed now \e[0m"
 
