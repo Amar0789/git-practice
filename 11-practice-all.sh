@@ -1,8 +1,11 @@
 #! /bin/bash
 
-person1=$1
-person2=$2
+Echo "Hi user please enter your username"
 
-echo "I am just taking command line argumets of $person1 and $person2"
+read username
 
+echo "Please enter your password"
 
+read -s password
+
+echo "Hi $username welcome to your dashboard and your passord is $password"
