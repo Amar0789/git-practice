@@ -22,7 +22,7 @@ echo "$friend1 - Wow! You finally got to study the subject you loved the most in
 
 echo "$friend2 - True. What about you $friend1? Wasn't History your favourite subject?"
 
-echo "$friend1 - You guessed it right. I took up History Honours in Lady Shri Ram College for Women in Delhi."
+echo "$friend1 - You guessed it right. I took up History Honours in Shri Ram College for men in Delhi."
 
 echo "$friend2 - That's nice. I am so happy for you."
 
