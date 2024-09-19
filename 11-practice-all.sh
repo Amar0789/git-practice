@@ -1,14 +1,13 @@
 #!/bin/bash
 
-echo "please enter num1"
+echo "please eneter a number"
 
-read num1
+read num
 
-echo "please enter num2"
+if [ $num gt 5 ]
 
-read num2
+ then echo "The number you have entered is greater than 5"
 
-num3=$(($num1*$num2))
+  else echo "The number you have enetered is less than 5"
 
-echo "sum of given 2 numbers is $num3"
-
+fi   
