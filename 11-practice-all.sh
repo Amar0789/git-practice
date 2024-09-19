@@ -1,7 +1,7 @@
 #!/bin/bash
 
-friend1=Amar
-friend2=Arun
+friend1=$1
+friend2=$2
 
 
 echo "Welcome to the conversation between $friend1 and $friend2"
