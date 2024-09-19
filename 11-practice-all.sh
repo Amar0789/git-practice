@@ -11,7 +11,7 @@ fi
 
 yum install mysql -y
 
-if [ $? -eq 0 ]
+if [ $? -ne 0 ]
 
  then echo "mysql is getting installed"
 
