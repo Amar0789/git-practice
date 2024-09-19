@@ -1,13 +1,22 @@
 #!/bin/bash
 
-echo "please eneter a number"
+user=$(id -u)
 
-read num
+if [ $user -ne 0 ]
+ 
+ then "Please execute the task with root privileges"
 
-if [ $num -gt 5 ]
+ exit1
+fi
 
- then echo "The number you have entered is greater than 5"
+yum install mysql -y
 
-  else echo "The number you have enetered is less than 5"
+if [ $? -eq 0 ]
 
-fi   
+ then echo "mysql is getting installed"
+
+ else echo "mysql is already installed"
+
+fi
+
+ 
