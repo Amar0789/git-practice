@@ -9,9 +9,9 @@ if [ $user -ne 0 ]
  exit1
 fi
 
-yum install mysql -y
+which mysql
 
-if [ $? -ne 0 ]
+if [ $? -eq 0 ]
 
  then echo "mysql is getting installed"
 
