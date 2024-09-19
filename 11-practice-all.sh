@@ -7,6 +7,18 @@ read friend1
 echo "please mention your friend2 name"
 read friend2
 
+
+echo "Hi $friend1 please enter your password"
+read -s passwd1
+
+echo "Hi $friend2 please enter your password"
+read -s passwd2
+
+echo "Hi $friend1 your password is $passwd1"
+
+echo "Hi $friend2 your password is $passwd2"
+
+
 #friend1=$1
 #friend2=$2
 
