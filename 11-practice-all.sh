@@ -2,24 +2,25 @@
 
 echo "Please enter your favoutite fruit1"
 
-read 1
+read one
 
 echo "Please enter your favoutite fruit1"
 
-read 2
+read two
 
 echo "Please enter your favoutite fruit1"
 
-read 3
+read three
 
 echo "Please enter your favoutite fruit1"
 
-read 4
+read four
 
 echo "Please enter your favoutite fruit1"
 
-read 5
+read five
 
-fruits=("$1" "$2" "$3" "$4" "$5")
+fruits=("$one" "$two" "$three" "$four" "$five")
+
 
 echo "My favourite fruit is ${fruits[0]}" 
