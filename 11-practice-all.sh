@@ -13,10 +13,13 @@ which mysql
 
 if [ $? -eq 0 ]
 
- then echo "mysql is getting installed"
+ then echo "mysql is already installed"
 
- else echo "mysql is already installed"
+ exit1
 
+ else echo "mysql is getting installed"
+ yum install mysql -y 
+ 
 fi
 
  
