@@ -17,17 +17,17 @@ if [ $userid -ne 0 ]
 
 fi
 
- which $@
+ dnf list installed $packagename
 
 if [ $? -eq 0 ]
 
- then echo "$@ is already installed"
+ then echo "$packagename is already installed"
 
  else 
 
- dnf install $@ -y
+ yum install $packagename -y
 
- echo "$@ is getting installed"
+ echo "$packagename is getting installed"
 
  exit
 fi
