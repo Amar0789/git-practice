@@ -20,7 +20,7 @@ do
 
   echo "$packagename is already intstlled"
 
-  exit 1
+  
 
  else 
 
