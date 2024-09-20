@@ -3,16 +3,20 @@
 for packagename in $@
 
 do
+
  user=$(id -u)
 
  if [ $user -ne 0 ]
 
-  then echo "Please execute the task with root privileges"
+  then 
+
+  echo "Please execute the task with root privileges"
+
   exit 
 
  fi
 
- which $packagename
+ dnf list installed $packagename
 
  if [ $? -eq 0 ]
 
