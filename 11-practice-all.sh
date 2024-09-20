@@ -18,7 +18,7 @@ do
 
  then
 
-  echo "$package is already intstlled"
+  echo "$packagename is already intstlled"
 
   exit 1
 
