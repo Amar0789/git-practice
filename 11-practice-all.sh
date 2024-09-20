@@ -29,7 +29,7 @@ if [ $? -eq 0 ]
 
  echo "$packagename is getting installed"
 
- exit
+ 
 fi
 
 done
