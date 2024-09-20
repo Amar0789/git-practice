@@ -17,17 +17,17 @@ if [ $userid -ne 0 ]
 
 fi
 
- which $packagename
+ which $@
 
 if [ $? -eq 0 ]
 
- then echo "$packagename is already installed"
+ then echo "$@ is already installed"
 
  else 
 
- dnf install $packagename -y
+ dnf install $@ -y
 
- echo "$packagename is getting installed"
+ echo "$@ is getting installed"
 
  exit
 fi
