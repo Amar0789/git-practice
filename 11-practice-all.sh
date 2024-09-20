@@ -17,7 +17,7 @@ if [ $userid -ne 0 ]
 
 fi
 
- dnf list intalled $packagename
+ which $packagename
 
 if [ $? -eq 0 ]
 
