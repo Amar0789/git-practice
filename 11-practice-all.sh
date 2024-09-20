@@ -8,7 +8,7 @@ do
  if [ $user -ne 0 ]
 
   then echo "Please execute the task with root privileges"
-  exit 1
+  exit 
 
  fi
 
@@ -19,8 +19,6 @@ do
  then
 
   echo "$packagename is already intstlled"
-
-  
 
  else 
 
