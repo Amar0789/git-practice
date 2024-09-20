@@ -15,8 +15,6 @@ if [ userid -ne 0 ]
 
  exit
 
- else 
-
 fi
 
  dnf list intalled $packagename
