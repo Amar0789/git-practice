@@ -2,10 +2,10 @@
 
 #!/bin/bash
 
-R= "\e[31m"
+R="\e[31m"
 #Y=
-G= "\e[32m"
-N= "\e[0m"
+G="\e[32m"
+N="\e[0m"
 
  userid=$(id -u)
 
@@ -33,13 +33,13 @@ $usercheck
 
 if [ $? -eq 0 ]
 
- then echo " $R $packagename is already installed $N "
+ then echo -e " $R $packagename is already installed $N "
 
  else 
 
  yum install $packagename -y
 
- echo " $G $packagename is getting installed $N "
+ echo -e " $G $packagename is getting installed $N "
 
  
 fi
