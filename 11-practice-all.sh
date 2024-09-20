@@ -2,34 +2,36 @@
 
 for packagename in $@
 
-do
+do 
 
- user=$(id -u)
+ userid = $(id -u)
 
- if [ $user -ne 0 ]
 
-  then 
+if [ userid -ne 0 ]
+ 
+ then 
 
-  echo "Please execute the task with root privileges"
+ echo "Please execute the task with root privileges"
 
-  exit 
-
- fi
-
- dnf list installed $packagename
-
- if [ $? -eq 0 ]
-
- then
-
-  echo "$packagename is already intstalled"
+ exit
 
  else 
- 
-   yum install $packagename -y
 
-   echo "$packagename is getting installed"
+fi
 
- fi
+ dnf list intalled $packagename
+
+if [ $? -eq o ]
+
+ then echo "$packagename is already installed"
+
+ else 
+
+ dnf install $packagename -y
+
+ echo "$packagename is getting installed"
+
+ exit
+fi
 
 done
