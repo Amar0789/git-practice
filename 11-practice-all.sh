@@ -12,13 +12,13 @@ do
 
  fi
 
- dnf list intalled $packagename
+ which $packagename
 
  if [ $? -eq 0 ]
 
  then
 
-  echo "$packagename is already intstlled"
+  echo "$packagename is already intstalled"
 
  else 
 
