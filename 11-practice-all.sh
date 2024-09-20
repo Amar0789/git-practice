@@ -2,27 +2,30 @@
 
 for packagename in $@
 
-user=$(id -u)
+do
+ user=$(id -u)
 
-if [ $user -ne 0 ]
+ if [ $user -ne 0 ]
 
- then echo "Please execute the task with root privileges"
- exit 1
+  then echo "Please execute the task with root privileges"
+  exit 1
 
-fi
+ fi
 
-yum list intalled $packagename
+ yum list intalled $packagename
 
-if [ $? -eq 0 ]
+ if [ $? -eq 0 ]
 
- echo "$package is already intstlled"
+  echo "$package is already intstlled"
 
- exit 1
+  exit 1
 
- else 
+  else 
 
- yum install $packagename -y
+  yum install $packagename -y
 
- echo "$packagename is getting installed"
+  echo "$packagename is getting installed"
 
-fi
+ fi
+
+done
