@@ -1,25 +1,28 @@
 #!/bin/bash
 
+for packagename in $@
+
 user=$(id -u)
 
 if [ $user -ne 0 ]
- 
- then "Please execute the task with root privileges"
 
+ then echo "Please execute the task with root privileges"
  exit 1
+
 fi
 
-which mysql
+yum list intalled $packagename
 
 if [ $? -eq 0 ]
 
- then echo "mysql is already installed"
+ echo "$package is already intstlled"
 
  exit 1
 
- else echo "mysql is getting installed"
- yum install mysql -y 
+ else 
+
+ yum install $packagename -y
+
+ echo "$packagename is getting installed"
 
 fi
-
- 
