@@ -12,7 +12,7 @@ do
 
  fi
 
- yum list intalled $packagename
+ dnf list intalled $packagename
 
  if [ $? -eq 0 ]
 
