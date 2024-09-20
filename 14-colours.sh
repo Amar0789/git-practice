@@ -9,28 +9,31 @@ N="\e[0m"
 
  userid=$(id -u)
 
-checkuser() {
 
-if [ $userid -ne 0 ]
+usercheck() {
+    
+    if [ $userid -ne 0 ]
  
  then 
 
- echo "$R Please execute the task with root privileges $N"
+ echo "Please execute the task with root privileges"
 
  exit
 
-fi
+fi  }
 
-    
-}
 
-$checkuser
+for packagename in $@
 
-dnf list installed $packagename
+do 
+
+$usercheck
+
+ dnf list installed $packagename
 
 if [ $? -eq 0 ]
 
- then echo "$R $packagename is already installed  $N"
+ then echo "$R $packagename is already installed $N"
 
  else 
 
