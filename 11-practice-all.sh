@@ -16,11 +16,13 @@ do
 
  if [ $? -eq 0 ]
 
+ then
+
   echo "$package is already intstlled"
 
   exit 1
 
-  else 
+ else 
 
   yum install $packagename -y
 
