@@ -19,7 +19,7 @@ fi
 
  dnf list intalled $packagename
 
-if [ $? -eq o ]
+if [ $? -eq 0 ]
 
  then echo "$packagename is already installed"
 
