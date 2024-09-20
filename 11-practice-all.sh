@@ -24,9 +24,11 @@ do
 
   echo "$packagename is already intstalled"
 
- else yum install $packagename -y
+ else 
+ 
+   yum install $packagename -y
 
-  echo "$packagename is getting installed"
+   echo "$packagename is getting installed"
 
  fi
 
